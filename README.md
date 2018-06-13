@@ -1,3 +1,7 @@
+# Adding modsecurity to the forked nginx ssl proxy
+
+Instead of basing the project on the nginx it is based on alpine version adding modsecurity to it
+
 # SSL Front-End Proxy With Automatic Free Certificate Management
 
 Zero configuration required - set up SSL in 30 seconds. Out of the box A rating at SSL labs. HTTP/2 enabled for increased performance.
