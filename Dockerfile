@@ -176,8 +176,8 @@ ENV ENVPLATE_SHA256 8366c3c480379dc325dea725aac86212c5f5d1bf55f5a9ef8e92375f42d5
 ENV CLOUDFLARE_V4_SHA256 0248f5d00559a9caed08c3fad66f25f8570375c256ca3aa918dcba3378a8953c
 ENV CLOUDFLARE_V6_SHA256 e7d84e6f9f8668279312a4ed836ce69cab1750d6745062c7e73d9534711d7dc7
 
-RUN apk update && apk add ca-certificates bash && rm -rf /var/cache/apk/* \
-	&& apk add --no-cache --virtual wget curl certbot \
+RUN apk update && apk add ca-certificates bash certbot curl && rm -rf /var/cache/apk/* \
+	&& apk add --no-cache --virtual wget \
     && echo "---> INSTALLING s6-overlay" \
     && wget https://github.com/just-containers/s6-overlay/releases/download/v1.17.0.0/s6-overlay-amd64.tar.gz \
     && echo "$S6_OVERLAY_SHA256  s6-overlay-amd64.tar.gz" | sha256sum -c \
