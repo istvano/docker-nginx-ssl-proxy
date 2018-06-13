@@ -80,7 +80,7 @@ Please file a pull request or create a new issue for problems or potential impro
 
 # License
 
-Copyright 2015 [Daniel Dent](https://www.danieldent.com/).
+Thanks to [Daniel Dent](https://www.danieldent.com/) for the base nginx code
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use these files except in compliance with the License.
